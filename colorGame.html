@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Color Matching Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="lib/css/colorGame.css">
+    </head>
+    <body>
+        <h1>The Color Matching Game</h1>
+        <div id="controls">
+            <div class="wrap">
+                <button id="reset">New Colors</button>
+                <button class="mode selected">Match by Color</button>
+                <button class="mode">Match by Name</button>
+            </div>
+        </div>
+        <div id="container">
+            <div class="card left">
+                <div class="wrap">
+                   <div class="picked-text">
+                        Find 
+                        <br>This
+                        <br>Color
+                    </div>
+                    <div class="picked-color square">
+                        <span id="picked-span">Color</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card right">
+                <div class="wrap">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+            </div>
+        </div>
+        <div id="popup" class="modal">
+                <div class="modal-content">
+                    <span id='popup-text'>Great Job!</span>
+                    <button class="popup-button">Play Again</button>
+                </div>
+            </div>
+        <script type="text/javascript" src="lib/js/colorGame.js"></script>
+    </body>
+</html>
